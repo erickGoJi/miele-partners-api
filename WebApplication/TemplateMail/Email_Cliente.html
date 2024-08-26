@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Email Cliente Miele</title>
+</head>
+<style>
+
+    .gradient {
+        background: rgba(254,254,254,1);
+        background: -moz-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 49%, rgba(219,219,219,1) 76%, rgba(226,226,226,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254,254,254,1)), color-stop(49%, rgba(209,209,209,1)), color-stop(76%, rgba(219,219,219,1)), color-stop(100%, rgba(226,226,226,1)));
+        background: -webkit-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 49%, rgba(219,219,219,1) 76%, rgba(226,226,226,1) 100%);
+        background: -o-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 49%, rgba(219,219,219,1) 76%, rgba(226,226,226,1) 100%);
+        background: -ms-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 49%, rgba(219,219,219,1) 76%, rgba(226,226,226,1) 100%);
+        background: linear-gradient(to bottom, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 49%, rgba(219,219,219,1) 76%, rgba(226,226,226,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e2e2e2', GradientType=0 );
+    }
+</style>
+<body>
+
+    <table width="700" border="0" cellpadding="0" cellspacing="0" align="center" style="background: rgba(254,254,254,1);
+        background: -moz-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 49%, rgba(219,219,219,1) 76%, rgba(226,226,226,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254,254,254,1)), color-stop(49%, rgba(209,209,209,1)), color-stop(76%, rgba(219,219,219,1)), color-stop(100%, rgba(226,226,226,1)));
+        background: -webkit-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 49%, rgba(219,219,219,1) 76%, rgba(226,226,226,1) 100%);
+        background: -o-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 49%, rgba(219,219,219,1) 76%, rgba(226,226,226,1) 100%);
+        background: -ms-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 49%, rgba(219,219,219,1) 76%, rgba(226,226,226,1) 100%);
+        background: linear-gradient(to bottom, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 49%, rgba(219,219,219,1) 76%, rgba(226,226,226,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e2e2e2', GradientType=0 );">
+        <tr>
+            <td align="center" font-family="sans-serif" font-size="30px" color="#444444"><img src="{ruta_rec}/header_mail.png" alt=""></td>
+        </tr>
+        <tr>
+            <td align="center" style="color:#444444; font-family: sans-serif;">
+                <p style="color: #8c0014; font-size:35px"><strong>{Titulo}</strong></p>
+
+            </td>
+        </tr>
+        <tr>
+            <td align="center" style="color: #444444; font-family: sans-serif; font-size:30px">
+                <p style="font-size:30px"><strong>{Saludo}</strong><br />{Username}</p>
+            </td>
+        </tr>
+        <!--<tr>
+        <td align="center" style="color:#444444; font-family: sans-serif; font-size:30px">
+            <hr style="border: 1.5px solid #8c0014; width: 650px;">
+        </td>
+    </tr>-->
+        <tr>
+            <td align="center" style="color: #444444; width:650px; font-family: sans-serif; font-size:30px">
+                <p style="text-align:justify; width:650px">{Texto}<strong style="color: #8c0014;">{NumeroCotizacion}</strong></p>
+                <hr style="border: 1.5px solid #8c0014; width: 650px;" />
+                <!--<p style="color: #444444">Lista de documentos</p>-->
+                <table width="650" style="text-align:left">
+                    <tr>
+                        <th width="400">Producto</th>
+                        <th style="text-align:center;" width="125">Manual</th>
+                        <th style="text-align:center;" width="125">Guía</th>
+                    </tr>
+                    <tr>{ListaProductos}</tr>
+
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" style="color: #444444; width:650px; font-family: sans-serif; font-size:16px">
+                <br /><br /><p style="text-align:justify; width:650px"><strong>IMPORTANTE: </strong>En caso de tener cualquier incoveniente al descargar la documentación puede contactar a nuestra area de soporte técnico marcando el 01 800 MIELE 00</p>
+                <br /><br />
+            </td>
+        </tr>
+        <!--<tr>
+        <td align="center" style="color: #444444; font-family: sans-serif; font-size:30px">
+            <p style="font-size: 14px;"><strong>Te invitamos a seguirnos en: </strong></p>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <a href="https://www.facebook.com/Miele.MEX/?brand_redir=379933908865015" target="_blank"><img src="{ruta_rec}/facebook_mail.png" alt=""></a>
+            <br />
+            <br />
+        </td>
+    </tr>-->
+        <tr align="center" style="color:white; width:700px; height:80px; font-size:16px; font-family: sans-serif; background-color: #8c0014;">
+            <td valign="middle">
+
+                <table width="700" style="font-family: sans-serif; font-size:11px; vertical-align:middle">
+                    <tr style="vertical-align:middle">
+                        <!--<td colspan="2" width="100px" height="80" color="#444444"><img width="140" height="80" src="{ruta_rec}/logosinFondo.png" alt=""></td>-->
+                        <td style="text-align:right; padding-left:10px">01 800 MIELE 00 </td>
+                        <td><img style="align-content:center" width="20" height="20" src="{ruta_rec}/AssetsMiele-02.png"></td>
+                        <td style="text-align:right"><a href="https://www.miele.com.mx" style="color: lightgray" target="_blank"> https://www.miele.com.mx</a> </td>
+                        <td><img width="20" height="20" src="{ruta_rec}/AssetsMiele-05.png"></td>
+                        <td style="text-align:right"><a href="https://shop.miele.com.mx" style="color: lightgray" target="_blank"> https://shop.miele.com.mx</a> </td>
+                        <td><img width="20" height="20" src="{ruta_rec}/AssetsMiele-03.png"></td>
+                        <td style="text-align:right" width="90px"><a href="https://www.facebook.com/Miele.MEX/?brand_redir=379933908865015" style="color: lightgray" target="_blank"> /Miele.MEX</a> </td>
+                        <td><img width="20" height="20" style="padding-right:20px" src="{ruta_rec}/AssetsMiele-04.png"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

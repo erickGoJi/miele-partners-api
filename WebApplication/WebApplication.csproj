@@ -1,0 +1,627 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20180125211456_init.cs" />
+    <Compile Remove="Migrations\20180125211456_init.Designer.cs" />
+    <Compile Remove="Migrations\20180129175443_clientes.cs" />
+    <Compile Remove="Migrations\20180129175443_clientes.Designer.cs" />
+    <Compile Remove="Migrations\20180129183602_clientes_update.cs" />
+    <Compile Remove="Migrations\20180129183602_clientes_update.Designer.cs" />
+    <Compile Remove="Migrations\20180129183911_clientes_update_1.cs" />
+    <Compile Remove="Migrations\20180129183911_clientes_update_1.Designer.cs" />
+    <Compile Remove="Migrations\20180129184155_clientes_update_2.cs" />
+    <Compile Remove="Migrations\20180129184155_clientes_update_2.Designer.cs" />
+    <Compile Remove="Migrations\20180129185546_clientes_update_3.cs" />
+    <Compile Remove="Migrations\20180129185546_clientes_update_3.Designer.cs" />
+    <Compile Remove="Migrations\20180129191933_clientes_update_4.cs" />
+    <Compile Remove="Migrations\20180129191933_clientes_update_4.Designer.cs" />
+    <Compile Remove="Migrations\20180129223942_cliente_update_5.cs" />
+    <Compile Remove="Migrations\20180129223942_cliente_update_5.Designer.cs" />
+    <Compile Remove="Migrations\20180214200106_update_productos_1.cs" />
+    <Compile Remove="Migrations\20180214200106_update_productos_1.Designer.cs" />
+    <Compile Remove="Migrations\20180214200155_update_productos_2.cs" />
+    <Compile Remove="Migrations\20180214200155_update_productos_2.Designer.cs" />
+    <Compile Remove="Migrations\20180214200657_update_productos_3.cs" />
+    <Compile Remove="Migrations\20180214200657_update_productos_3.Designer.cs" />
+    <Compile Remove="Migrations\20180214200800_update_productos_4.cs" />
+    <Compile Remove="Migrations\20180214200800_update_productos_4.Designer.cs" />
+    <Compile Remove="Migrations\20180214204008_update_productos_5.cs" />
+    <Compile Remove="Migrations\20180214204008_update_productos_5.Designer.cs" />
+    <Compile Remove="Migrations\20180216210431_servicios.cs" />
+    <Compile Remove="Migrations\20180216210431_servicios.Designer.cs" />
+    <Compile Remove="Migrations\20180216212954_servicios_1.cs" />
+    <Compile Remove="Migrations\20180216212954_servicios_1.Designer.cs" />
+    <Compile Remove="Migrations\20180216220053_servicios_2.cs" />
+    <Compile Remove="Migrations\20180216220053_servicios_2.Designer.cs" />
+    <Compile Remove="Migrations\20180216220452_servicios_3.cs" />
+    <Compile Remove="Migrations\20180216220452_servicios_3.Designer.cs" />
+    <Compile Remove="Migrations\20180216220807_servicios_4.cs" />
+    <Compile Remove="Migrations\20180216220807_servicios_4.Designer.cs" />
+    <Compile Remove="Migrations\20180216224724_servicios_5.cs" />
+    <Compile Remove="Migrations\20180216224724_servicios_5.Designer.cs" />
+    <Compile Remove="Migrations\20180216225452_servicios_6.cs" />
+    <Compile Remove="Migrations\20180216225452_servicios_6.Designer.cs" />
+    <Compile Remove="Migrations\20180216230031_servicios_7.cs" />
+    <Compile Remove="Migrations\20180216230031_servicios_7.Designer.cs" />
+    <Compile Remove="Migrations\20180216231945_servicios_8.cs" />
+    <Compile Remove="Migrations\20180216231945_servicios_8.Designer.cs" />
+    <Compile Remove="Migrations\20180216232224_servicios_9.cs" />
+    <Compile Remove="Migrations\20180216232224_servicios_9.Designer.cs" />
+    <Compile Remove="Migrations\20180216232356_servicios_10.cs" />
+    <Compile Remove="Migrations\20180216232356_servicios_10.Designer.cs" />
+    <Compile Remove="Migrations\20180216232703_servicios_11.cs" />
+    <Compile Remove="Migrations\20180216232703_servicios_11.Designer.cs" />
+    <Compile Remove="Migrations\20180217075231_servicio.cs" />
+    <Compile Remove="Migrations\20180217075231_servicio.Designer.cs" />
+    <Compile Remove="Migrations\20180217080705_servicio_3.cs" />
+    <Compile Remove="Migrations\20180217080705_servicio_3.Designer.cs" />
+    <Compile Remove="Migrations\20180217081005_servicio_4.cs" />
+    <Compile Remove="Migrations\20180217081005_servicio_4.Designer.cs" />
+    <Compile Remove="Migrations\20180217081750_servicio_5.cs" />
+    <Compile Remove="Migrations\20180217081750_servicio_5.Designer.cs" />
+    <Compile Remove="Migrations\20180217102627_servicio_6.cs" />
+    <Compile Remove="Migrations\20180217102627_servicio_6.Designer.cs" />
+    <Compile Remove="Migrations\20180220192114_delete_refacciones.cs" />
+    <Compile Remove="Migrations\20180220192114_delete_refacciones.Designer.cs" />
+    <Compile Remove="Migrations\20180220194414_insert_refacciones.cs" />
+    <Compile Remove="Migrations\20180220194414_insert_refacciones.Designer.cs" />
+    <Compile Remove="Migrations\20180221001541_delete_servicio_recacciones.cs" />
+    <Compile Remove="Migrations\20180221001541_delete_servicio_recacciones.Designer.cs" />
+    <Compile Remove="Migrations\20180221065020_cambios_servicio.cs" />
+    <Compile Remove="Migrations\20180221065020_cambios_servicio.Designer.cs" />
+    <Compile Remove="Migrations\20180221070511_delete_servicio_recacciones_1.cs" />
+    <Compile Remove="Migrations\20180221070511_delete_servicio_recacciones_1.Designer.cs" />
+    <Compile Remove="Migrations\20180221071218_IBS.cs" />
+    <Compile Remove="Migrations\20180221071218_IBS.Designer.cs" />
+    <Compile Remove="Migrations\20180221191543_agregar_cierrecliente.cs" />
+    <Compile Remove="Migrations\20180221191543_agregar_cierrecliente.Designer.cs" />
+    <Compile Remove="Migrations\20180221202857_historial_estatus.cs" />
+    <Compile Remove="Migrations\20180221202857_historial_estatus.Designer.cs" />
+    <Compile Remove="Migrations\20180222161229_inicio_servicio.cs" />
+    <Compile Remove="Migrations\20180222161229_inicio_servicio.Designer.cs" />
+    <Compile Remove="Migrations\20180227164926_null_id_motivo_cierre.cs" />
+    <Compile Remove="Migrations\20180227164926_null_id_motivo_cierre.Designer.cs" />
+    <Compile Remove="Migrations\20180306233551_atributos.cs" />
+    <Compile Remove="Migrations\20180306233551_atributos.Designer.cs" />
+    <Compile Remove="Migrations\20180307220831_cambios_a_servicio.cs" />
+    <Compile Remove="Migrations\20180307220831_cambios_a_servicio.Designer.cs" />
+    <Compile Remove="Migrations\20180307221936_cambios_a_servicio_4.cs" />
+    <Compile Remove="Migrations\20180307221936_cambios_a_servicio_4.Designer.cs" />
+    <Compile Remove="Migrations\20180307222219_cambios_a_servicio_5.cs" />
+    <Compile Remove="Migrations\20180307222219_cambios_a_servicio_5.Designer.cs" />
+    <Compile Remove="Migrations\20180307222628_cambios_a_servicio_1.cs" />
+    <Compile Remove="Migrations\20180307222628_cambios_a_servicio_1.Designer.cs" />
+    <Compile Remove="Migrations\20180308051037_fechainicio.cs" />
+    <Compile Remove="Migrations\20180308051037_fechainicio.Designer.cs" />
+    <Compile Remove="Migrations\20180308054431_fechainicio1.cs" />
+    <Compile Remove="Migrations\20180308054431_fechainicio1.Designer.cs" />
+    <Compile Remove="Migrations\20180308055453_fechainicio2.cs" />
+    <Compile Remove="Migrations\20180308055453_fechainicio2.Designer.cs" />
+    <Compile Remove="Migrations\20180308080757_fechainicio4.cs" />
+    <Compile Remove="Migrations\20180308080757_fechainicio4.Designer.cs" />
+    <Compile Remove="Migrations\20180308223555_checklist.cs" />
+    <Compile Remove="Migrations\20180308223555_checklist.Designer.cs" />
+    <Compile Remove="Migrations\20180308224720_checklist_1.cs" />
+    <Compile Remove="Migrations\20180308224720_checklist_1.Designer.cs" />
+    <Compile Remove="Migrations\20180310191202_agregrar_idvisita.cs" />
+    <Compile Remove="Migrations\20180310191202_agregrar_idvisita.Designer.cs" />
+    <Compile Remove="Migrations\20180310191944_agregrar_idvisita1.cs" />
+    <Compile Remove="Migrations\20180310191944_agregrar_idvisita1.Designer.cs" />
+    <Compile Remove="Migrations\20180312215205_llaves_cliente_producto.cs" />
+    <Compile Remove="Migrations\20180312215205_llaves_cliente_producto.Designer.cs" />
+    <Compile Remove="Migrations\20180312221743_llaves_cliente_producto_2.cs" />
+    <Compile Remove="Migrations\20180312221743_llaves_cliente_producto_2.Designer.cs" />
+    <Compile Remove="Migrations\20180312221906_llaves_cliente_producto_3.cs" />
+    <Compile Remove="Migrations\20180312221906_llaves_cliente_producto_3.Designer.cs" />
+    <Compile Remove="Migrations\20180312222033_llaves_cliente_producto_4.cs" />
+    <Compile Remove="Migrations\20180312222033_llaves_cliente_producto_4.Designer.cs" />
+    <Compile Remove="Migrations\20180313222053_eliminar_relacionServicioDistribuidor.cs" />
+    <Compile Remove="Migrations\20180313222053_eliminar_relacionServicioDistribuidor.Designer.cs" />
+    <Compile Remove="Migrations\20180313230614_activar_credito.cs" />
+    <Compile Remove="Migrations\20180313230614_activar_credito.Designer.cs" />
+    <Compile Remove="Migrations\20180313235141_activar_credito_1.cs" />
+    <Compile Remove="Migrations\20180313235141_activar_credito_1.Designer.cs" />
+    <Compile Remove="Migrations\20180315232204_fecha_direccion.cs" />
+    <Compile Remove="Migrations\20180315232204_fecha_direccion.Designer.cs" />
+    <Compile Remove="Migrations\20180321203302_datos_fiscales.cs" />
+    <Compile Remove="Migrations\20180321203302_datos_fiscales.Designer.cs" />
+    <Compile Remove="Migrations\20180321203550_estatus.cs" />
+    <Compile Remove="Migrations\20180321203550_estatus.Designer.cs" />
+    <Compile Remove="Migrations\20180323183834_AgregarAccesorios2.cs" />
+    <Compile Remove="Migrations\20180323183834_AgregarAccesorios2.Designer.cs" />
+    <Compile Remove="Migrations\20180323184426_DeleteAccesorios.cs" />
+    <Compile Remove="Migrations\20180323184426_DeleteAccesorios.Designer.cs" />
+    <Compile Remove="Migrations\20180323190010_AgregarAccesorios5.cs" />
+    <Compile Remove="Migrations\20180323190010_AgregarAccesorios5.Designer.cs" />
+    <Compile Remove="Migrations\20180323213253_imagenes.cs" />
+    <Compile Remove="Migrations\20180323213253_imagenes.Designer.cs" />
+    <Compile Remove="Migrations\20180323232014_imagenes_1.cs" />
+    <Compile Remove="Migrations\20180323232014_imagenes_1.Designer.cs" />
+    <Compile Remove="Migrations\20180324202604_refaccion.cs" />
+    <Compile Remove="Migrations\20180324202604_refaccion.Designer.cs" />
+    <Compile Remove="Migrations\20180326022237_AgregarCarrito1.cs" />
+    <Compile Remove="Migrations\20180326022237_AgregarCarrito1.Designer.cs" />
+    <Compile Remove="Migrations\20180326190718_AgregarCarritoCambios.cs" />
+    <Compile Remove="Migrations\20180326190718_AgregarCarritoCambios.Designer.cs" />
+    <Compile Remove="Migrations\20180327174946_AgregarEstadoCliente.cs" />
+    <Compile Remove="Migrations\20180327174946_AgregarEstadoCliente.Designer.cs" />
+    <Compile Remove="Migrations\20180328152741_AgregarObservacionesCotiza.cs" />
+    <Compile Remove="Migrations\20180328152741_AgregarObservacionesCotiza.Designer.cs" />
+    <Compile Remove="Migrations\20180328165128_CorrecionesCarrito.cs" />
+    <Compile Remove="Migrations\20180328165128_CorrecionesCarrito.Designer.cs" />
+    <Compile Remove="Migrations\20180329201156_AgregarCreoCotizacion.cs" />
+    <Compile Remove="Migrations\20180329201156_AgregarCreoCotizacion.Designer.cs" />
+    <Compile Remove="Migrations\20180331005642_estatus_add.cs" />
+    <Compile Remove="Migrations\20180331005642_estatus_add.Designer.cs" />
+    <Compile Remove="Migrations\20180402155054_delete_categoria.cs" />
+    <Compile Remove="Migrations\20180402155054_delete_categoria.Designer.cs" />
+    <Compile Remove="Migrations\20180402155500_add_tipo_servicio.cs" />
+    <Compile Remove="Migrations\20180402155500_add_tipo_servicio.Designer.cs" />
+    <Compile Remove="Migrations\20180402173420_estatus_visita_estatus_producto.cs" />
+    <Compile Remove="Migrations\20180402173420_estatus_visita_estatus_producto.Designer.cs" />
+    <Compile Remove="Migrations\20180402200236_cambio_base.cs" />
+    <Compile Remove="Migrations\20180402200236_cambio_base.Designer.cs" />
+    <Compile Remove="Migrations\20180402201046_AgregarRoles.cs" />
+    <Compile Remove="Migrations\20180402201046_AgregarRoles.Designer.cs" />
+    <Compile Remove="Migrations\20180402201343_quitacreadopor1.cs" />
+    <Compile Remove="Migrations\20180402201343_quitacreadopor1.Designer.cs" />
+    <Compile Remove="Migrations\20180402201500_AgregarcreadoporCotiza.cs" />
+    <Compile Remove="Migrations\20180402201500_AgregarcreadoporCotiza.Designer.cs" />
+    <Compile Remove="Migrations\20180402202206_null.cs" />
+    <Compile Remove="Migrations\20180402202206_null.Designer.cs" />
+    <Compile Remove="Migrations\20180403182340_AgregarTipoDirecciones.cs" />
+    <Compile Remove="Migrations\20180403182340_AgregarTipoDirecciones.Designer.cs" />
+    <Compile Remove="Migrations\20180404030536_creadoporCotiza10.cs" />
+    <Compile Remove="Migrations\20180404030536_creadoporCotiza10.Designer.cs" />
+    <Compile Remove="Migrations\20180404030941_agregarcontactodireccion.cs" />
+    <Compile Remove="Migrations\20180404030941_agregarcontactodireccion.Designer.cs" />
+    <Compile Remove="Migrations\20180405044301_AgregarMovildireccion.cs" />
+    <Compile Remove="Migrations\20180405044301_AgregarMovildireccion.Designer.cs" />
+    <Compile Remove="Migrations\20180406140852_AgregarFormasPago.cs" />
+    <Compile Remove="Migrations\20180406140852_AgregarFormasPago.Designer.cs" />
+    <Compile Remove="Migrations\20180408232812_agregarexteriordireccion.cs" />
+    <Compile Remove="Migrations\20180408232812_agregarexteriordireccion.Designer.cs" />
+    <Compile Remove="Migrations\20180409052556_agregarclientefiscales.cs" />
+    <Compile Remove="Migrations\20180409052556_agregarclientefiscales.Designer.cs" />
+    <Compile Remove="Migrations\20180409072829_agregarformaspagocotiza.cs" />
+    <Compile Remove="Migrations\20180409072829_agregarformaspagocotiza.Designer.cs" />
+    <Compile Remove="Migrations\20180409151720_agregarcantidadPcarrito.cs" />
+    <Compile Remove="Migrations\20180409151720_agregarcantidadPcarrito.Designer.cs" />
+    <Compile Remove="Migrations\20180409164135_agregarcantidadPcotiza.cs" />
+    <Compile Remove="Migrations\20180409164135_agregarcantidadPcotiza.Designer.cs" />
+    <Compile Remove="Migrations\20180409171103_agregardocumentoscotiza.cs" />
+    <Compile Remove="Migrations\20180409171103_agregardocumentoscotiza.Designer.cs" />
+    <Compile Remove="Migrations\20180409173442_eliminardocumentos.cs" />
+    <Compile Remove="Migrations\20180409173442_eliminardocumentos.Designer.cs" />
+    <Compile Remove="Migrations\20180409173559_agregardocumentoscotiza2.cs" />
+    <Compile Remove="Migrations\20180409173559_agregardocumentoscotiza2.Designer.cs" />
+    <Compile Remove="Migrations\20180409215843_agregardoibscotiza.cs" />
+    <Compile Remove="Migrations\20180409215843_agregardoibscotiza.Designer.cs" />
+    <Compile Remove="Migrations\20180409235711_agregarcunetausuarios.cs" />
+    <Compile Remove="Migrations\20180409235711_agregarcunetausuarios.Designer.cs" />
+    <Compile Remove="Migrations\20180410014144_agregarreferenciacotiza.cs" />
+    <Compile Remove="Migrations\20180410014144_agregarreferenciacotiza.Designer.cs" />
+    <Compile Remove="Migrations\20180410143127_agregarcunetaformaspago.cs" />
+    <Compile Remove="Migrations\20180410143127_agregarcunetaformaspago.Designer.cs" />
+    <Compile Remove="Migrations\20180410144508_agregarreferenciacotiza1.cs" />
+    <Compile Remove="Migrations\20180410144508_agregarreferenciacotiza1.Designer.cs" />
+    <Compile Remove="Migrations\20180410144713_agregarreferenciacotiza2.cs" />
+    <Compile Remove="Migrations\20180410144713_agregarreferenciacotiza2.Designer.cs" />
+    <Compile Remove="Migrations\20180410175501_agregartipoprod.cs" />
+    <Compile Remove="Migrations\20180410175501_agregartipoprod.Designer.cs" />
+    <Compile Remove="Migrations\20180415013122_AgregarFechasDireccion1.cs" />
+    <Compile Remove="Migrations\20180415013122_AgregarFechasDireccion1.Designer.cs" />
+    <Compile Remove="Migrations\20180417234533_delete_tipo.cs" />
+    <Compile Remove="Migrations\20180417234533_delete_tipo.Designer.cs" />
+    <Compile Remove="Migrations\20180417234621_tipo.cs" />
+    <Compile Remove="Migrations\20180417234621_tipo.Designer.cs" />
+    <Compile Remove="Migrations\20180418231242_ModifcarRolForCondPago3.cs" />
+    <Compile Remove="Migrations\20180418231242_ModifcarRolForCondPago3.Designer.cs" />
+    <Compile Remove="Migrations\20180418232002_ModifcarRolForCondPago5.cs" />
+    <Compile Remove="Migrations\20180418232002_ModifcarRolForCondPago5.Designer.cs" />
+    <Compile Remove="Migrations\20180418232733_ModifcarRolForCondPago6.cs" />
+    <Compile Remove="Migrations\20180418232733_ModifcarRolForCondPago6.Designer.cs" />
+    <Compile Remove="Migrations\20180419173030_localidad.cs" />
+    <Compile Remove="Migrations\20180419173030_localidad.Designer.cs" />
+    <Compile Remove="Migrations\20180419211953_pedo.cs" />
+    <Compile Remove="Migrations\20180419211953_pedo.Designer.cs" />
+    <Compile Remove="Migrations\20180419213052_repuesto_tecnico.cs" />
+    <Compile Remove="Migrations\20180419213052_repuesto_tecnico.Designer.cs" />
+    <Compile Remove="Migrations\20180425165451_AgregarAcceosoriosRel.cs" />
+    <Compile Remove="Migrations\20180425165451_AgregarAcceosoriosRel.Designer.cs" />
+    <Compile Remove="Migrations\20180427175944_hora_fin.cs" />
+    <Compile Remove="Migrations\20180427175944_hora_fin.Designer.cs" />
+    <Compile Remove="Migrations\20180502165717_AgregarReferidosCliente.cs" />
+    <Compile Remove="Migrations\20180502165717_AgregarReferidosCliente.Designer.cs" />
+    <Compile Remove="Migrations\20180503003158_AgregarlocalidadCatDirecciones.cs" />
+    <Compile Remove="Migrations\20180503003158_AgregarlocalidadCatDirecciones.Designer.cs" />
+    <Compile Remove="Migrations\20180503182507_color_tecnico.cs" />
+    <Compile Remove="Migrations\20180503182507_color_tecnico.Designer.cs" />
+    <Compile Remove="Migrations\20180503211540_horas_tecnico.cs" />
+    <Compile Remove="Migrations\20180503211540_horas_tecnico.Designer.cs" />
+    <Compile Remove="Migrations\20180506033703_foreingkeydatosfiscales.cs" />
+    <Compile Remove="Migrations\20180506033703_foreingkeydatosfiscales.Designer.cs" />
+    <Compile Remove="Migrations\20180506042616_AgregarCondicionesCuenta.cs" />
+    <Compile Remove="Migrations\20180506042616_AgregarCondicionesCuenta.Designer.cs" />
+    <Compile Remove="Migrations\20180506043759_AgregarCondicionesCreacion.cs" />
+    <Compile Remove="Migrations\20180506043759_AgregarCondicionesCreacion.Designer.cs" />
+    <Compile Remove="Migrations\20180506044812_AgregarCondicionesCuentafechas.cs" />
+    <Compile Remove="Migrations\20180506044812_AgregarCondicionesCuentafechas.Designer.cs" />
+    <Compile Remove="Migrations\20180506050419_AgregarCondicionescorrecion.cs" />
+    <Compile Remove="Migrations\20180506050419_AgregarCondicionescorrecion.Designer.cs" />
+    <Compile Remove="Migrations\20180506064328_AgregarVigenciarefCotiza.cs" />
+    <Compile Remove="Migrations\20180506064328_AgregarVigenciarefCotiza.Designer.cs" />
+    <Compile Remove="Migrations\20180506174008_AgregarCondicionesCuentaVigencia.cs" />
+    <Compile Remove="Migrations\20180506174008_AgregarCondicionesCuentaVigencia.Designer.cs" />
+    <Compile Remove="Migrations\20180507161901_foreing_key_cliente_producto.cs" />
+    <Compile Remove="Migrations\20180507161901_foreing_key_cliente_producto.Designer.cs" />
+    <Compile Remove="Migrations\20180507162937_update_Cliente_Productos.cs" />
+    <Compile Remove="Migrations\20180507162937_update_Cliente_Productos.Designer.cs" />
+    <Compile Remove="Migrations\20180507165532_delete_cliente_producto.cs" />
+    <Compile Remove="Migrations\20180507165532_delete_cliente_producto.Designer.cs" />
+    <Compile Remove="Migrations\20180507165955_re_add_Cliente_Productos.cs" />
+    <Compile Remove="Migrations\20180507165955_re_add_Cliente_Productos.Designer.cs" />
+    <Compile Remove="Migrations\20180508173225_AgregarAddFiscalesCanales.cs" />
+    <Compile Remove="Migrations\20180508173225_AgregarAddFiscalesCanales.Designer.cs" />
+    <Compile Remove="Migrations\20180509061622_datosFacLongIdCliente.cs" />
+    <Compile Remove="Migrations\20180509061622_datosFacLongIdCliente.Designer.cs" />
+    <Compile Remove="Migrations\20180510204901_datosCotizacionDuplicada.cs" />
+    <Compile Remove="Migrations\20180510204901_datosCotizacionDuplicada.Designer.cs" />
+    <Compile Remove="Migrations\20180513002211_AgregarImporteconidciones.cs" />
+    <Compile Remove="Migrations\20180513002211_AgregarImporteconidciones.Designer.cs" />
+    <Compile Remove="Migrations\20180514004003_Agregartiposcomprobantes.cs" />
+    <Compile Remove="Migrations\20180514004003_Agregartiposcomprobantes.Designer.cs" />
+    <Compile Remove="Migrations\20180514011049_AgregAgregarprefijosCalle.cs" />
+    <Compile Remove="Migrations\20180514011049_AgregAgregarprefijosCalle.Designer.cs" />
+    <Compile Remove="Migrations\20180515013456_Acciones2.cs" />
+    <Compile Remove="Migrations\20180515013456_Acciones2.Designer.cs" />
+    <Compile Remove="Migrations\20180515034412_requierefact2.cs" />
+    <Compile Remove="Migrations\20180515034412_requierefact2.Designer.cs" />
+    <Compile Remove="Migrations\20180515040602_Agregarrequierefact.cs" />
+    <Compile Remove="Migrations\20180515040602_Agregarrequierefact.Designer.cs" />
+    <Compile Remove="Migrations\20180531032440_AgregarManualGuia.cs" />
+    <Compile Remove="Migrations\20180531032440_AgregarManualGuia.Designer.cs" />
+    <Compile Remove="Migrations\20180531214406_codigo.cs" />
+    <Compile Remove="Migrations\20180531214406_codigo.Designer.cs" />
+    <Compile Remove="Migrations\20180604142428_AgregaCancelarCot.cs" />
+    <Compile Remove="Migrations\20180604142428_AgregaCancelarCot.Designer.cs" />
+    <Compile Remove="Migrations\20180610075151_checklist_visita.cs" />
+    <Compile Remove="Migrations\20180610075151_checklist_visita.Designer.cs" />
+    <Compile Remove="Migrations\20180610082443_id_producto_respuesta.cs" />
+    <Compile Remove="Migrations\20180610082443_id_producto_respuesta.Designer.cs" />
+    <Compile Remove="Migrations\20180610083257_checklist_visita_1.cs" />
+    <Compile Remove="Migrations\20180610083257_checklist_visita_1.Designer.cs" />
+    <Compile Remove="Migrations\20180618023810_producto_respuesta.cs" />
+    <Compile Remove="Migrations\20180618023810_producto_respuesta.Designer.cs" />
+    <Compile Remove="Migrations\20180618024908_producto_respuesta_1.cs" />
+    <Compile Remove="Migrations\20180618024908_producto_respuesta_1.Designer.cs" />
+    <Compile Remove="Migrations\20180618031409_producto_respuesta_2.cs" />
+    <Compile Remove="Migrations\20180618031409_producto_respuesta_2.Designer.cs" />
+    <Compile Remove="Migrations\20180618031854_producto_respuesta_3.cs" />
+    <Compile Remove="Migrations\20180618031854_producto_respuesta_3.Designer.cs" />
+    <Compile Remove="Migrations\20180619060614_no_tecnicos.cs" />
+    <Compile Remove="Migrations\20180619060614_no_tecnicos.Designer.cs" />
+    <Compile Remove="Migrations\20180622171541_se_agrego_campos_categoria_prod.cs" />
+    <Compile Remove="Migrations\20180622171541_se_agrego_campos_categoria_prod.Designer.cs" />
+    <Compile Remove="Migrations\20180622175618_se_agrego_campos_categoria_delete.cs" />
+    <Compile Remove="Migrations\20180622175618_se_agrego_campos_categoria_delete.Designer.cs" />
+    <Compile Remove="Migrations\20180622180137_se_agrego_campos_categoria_prod_2.cs" />
+    <Compile Remove="Migrations\20180622180137_se_agrego_campos_categoria_prod_2.Designer.cs" />
+    <Compile Remove="Migrations\20180622180333_se_agrego_campos_categoria_prod_4.cs" />
+    <Compile Remove="Migrations\20180622180333_se_agrego_campos_categoria_prod_4.Designer.cs" />
+    <Compile Remove="Migrations\20180626203625_rel_tipo.cs" />
+    <Compile Remove="Migrations\20180626203625_rel_tipo.Designer.cs" />
+    <Compile Remove="Migrations\20180628180739_cambios_tecnicos.cs" />
+    <Compile Remove="Migrations\20180628180739_cambios_tecnicos.Designer.cs" />
+    <Compile Remove="Migrations\20180702183042_TroubleShooting.cs" />
+    <Compile Remove="Migrations\20180702183042_TroubleShooting.Designer.cs" />
+    <Compile Remove="Migrations\20180702205431_codigo_estatus.cs" />
+    <Compile Remove="Migrations\20180702205431_codigo_estatus.Designer.cs" />
+    <Compile Remove="Migrations\20180703202443_Addsucursales.cs" />
+    <Compile Remove="Migrations\20180703202443_Addsucursales.Designer.cs" />
+    <Compile Remove="Migrations\20180703214720_Addsucursales2.cs" />
+    <Compile Remove="Migrations\20180703214720_Addsucursales2.Designer.cs" />
+    <Compile Remove="Migrations\20180704164513_rel_0.cs" />
+    <Compile Remove="Migrations\20180704164513_rel_0.Designer.cs" />
+    <Compile Remove="Migrations\20180704165908_rel_1.cs" />
+    <Compile Remove="Migrations\20180704165908_rel_1.Designer.cs" />
+    <Compile Remove="Migrations\20180704170105_rel_2.cs" />
+    <Compile Remove="Migrations\20180704170105_rel_2.Designer.cs" />
+    <Compile Remove="Migrations\20180705222954_Addsucursales3.cs" />
+    <Compile Remove="Migrations\20180705222954_Addsucursales3.Designer.cs" />
+    <Compile Remove="Migrations\20180706190242_material_1.cs" />
+    <Compile Remove="Migrations\20180706190242_material_1.Designer.cs" />
+    <Compile Remove="Migrations\20180713161352_AgregarNivelesUser.cs" />
+    <Compile Remove="Migrations\20180713161352_AgregarNivelesUser.Designer.cs" />
+    <Compile Remove="Migrations\20180713161648_AgregarNivelesUserString.cs" />
+    <Compile Remove="Migrations\20180713161648_AgregarNivelesUserString.Designer.cs" />
+    <Compile Remove="Migrations\20180718224745_AgregarIdSucursalesClientes.cs" />
+    <Compile Remove="Migrations\20180718224745_AgregarIdSucursalesClientes.Designer.cs" />
+    <Compile Remove="Migrations\20180723223301_no_seriw.cs" />
+    <Compile Remove="Migrations\20180723223301_no_seriw.Designer.cs" />
+    <Compile Remove="Migrations\20180725233147_AgregarPermisosBD.cs" />
+    <Compile Remove="Migrations\20180725233147_AgregarPermisosBD.Designer.cs" />
+    <Compile Remove="Migrations\20180725233438_AgregarPermisosBD1.cs" />
+    <Compile Remove="Migrations\20180725233438_AgregarPermisosBD1.Designer.cs" />
+    <Compile Remove="Migrations\20180725233935_ElmimarPermisos.cs" />
+    <Compile Remove="Migrations\20180725233935_ElmimarPermisos.Designer.cs" />
+    <Compile Remove="Migrations\20180726222154_AgregarPermisosFlujo.cs" />
+    <Compile Remove="Migrations\20180726222154_AgregarPermisosFlujo.Designer.cs" />
+    <Compile Remove="Migrations\20180727201354_pre_diagnostico.cs" />
+    <Compile Remove="Migrations\20180727201354_pre_diagnostico.Designer.cs" />
+    <Compile Remove="Migrations\20180730155152_prediagnosticoyasignacion.cs" />
+    <Compile Remove="Migrations\20180730155152_prediagnosticoyasignacion.Designer.cs" />
+    <Compile Remove="Migrations\20180730161212_prediagnosticoyasignacion_1.cs" />
+    <Compile Remove="Migrations\20180730161212_prediagnosticoyasignacion_1.Designer.cs" />
+    <Compile Remove="Migrations\20180730162303_prediagnosticoyasignacion_2.cs" />
+    <Compile Remove="Migrations\20180730162303_prediagnosticoyasignacion_2.Designer.cs" />
+    <Compile Remove="Migrations\20180731142526_prediagnostico_cantidad.cs" />
+    <Compile Remove="Migrations\20180731142526_prediagnostico_cantidad.Designer.cs" />
+    <Compile Remove="Migrations\20180802152937_entrega_refacciones.cs" />
+    <Compile Remove="Migrations\20180802152937_entrega_refacciones.Designer.cs" />
+    <Compile Remove="Migrations\20180803073525_fecha_fin.cs" />
+    <Compile Remove="Migrations\20180803073525_fecha_fin.Designer.cs" />
+    <Compile Remove="Migrations\20180803075523_no_serie_producto.cs" />
+    <Compile Remove="Migrations\20180803075523_no_serie_producto.Designer.cs" />
+    <Compile Remove="Migrations\20180808182121_ComentCancel.cs" />
+    <Compile Remove="Migrations\20180808182121_ComentCancel.Designer.cs" />
+    <Compile Remove="Migrations\20180810001808_Nivelroles.cs" />
+    <Compile Remove="Migrations\20180810001808_Nivelroles.Designer.cs" />
+    <Compile Remove="Migrations\20180817153027_sacar_tecnico_visita.cs" />
+    <Compile Remove="Migrations\20180817153027_sacar_tecnico_visita.Designer.cs" />
+    <Compile Remove="Migrations\20180817164025_tecnico_responsable.cs" />
+    <Compile Remove="Migrations\20180817164025_tecnico_responsable.Designer.cs" />
+    <Compile Remove="Migrations\20180821172327_AgregarFormasDepago.cs" />
+    <Compile Remove="Migrations\20180821172327_AgregarFormasDepago.Designer.cs" />
+    <Compile Remove="Migrations\20180822175800_AgregarRequiereComp.cs" />
+    <Compile Remove="Migrations\20180822175800_AgregarRequiereComp.Designer.cs" />
+    <Compile Remove="Migrations\20180822221857_AgregarEsliquidacion.cs" />
+    <Compile Remove="Migrations\20180822221857_AgregarEsliquidacion.Designer.cs" />
+    <Compile Remove="Migrations\20180822222501_prediagnostico_estatus.cs" />
+    <Compile Remove="Migrations\20180822222501_prediagnostico_estatus.Designer.cs" />
+    <Compile Remove="Migrations\20180822230058_AgregarTiposdeCompPortPago.cs" />
+    <Compile Remove="Migrations\20180822230058_AgregarTiposdeCompPortPago.Designer.cs" />
+    <Compile Remove="Migrations\20180823161829_AgregarCambiarCampopagos.cs" />
+    <Compile Remove="Migrations\20180823161829_AgregarCambiarCampopagos.Designer.cs" />
+    <Compile Remove="Migrations\20180823181122_AgregarformapagoDoctos.cs" />
+    <Compile Remove="Migrations\20180823181122_AgregarformapagoDoctos.Designer.cs" />
+    <Compile Remove="Migrations\20180824001644_AgregarCompUserFecha.cs" />
+    <Compile Remove="Migrations\20180824001644_AgregarCompUserFecha.Designer.cs" />
+    <Compile Remove="Migrations\20180827163340_AgregaraceptoTerminos.cs" />
+    <Compile Remove="Migrations\20180827163340_AgregaraceptoTerminos.Designer.cs" />
+    <Compile Remove="Migrations\20180827202948_fecha_entrega_refaccion.cs" />
+    <Compile Remove="Migrations\20180827202948_fecha_entrega_refaccion.Designer.cs" />
+    <Compile Remove="Migrations\20180828025219_coordenadas.cs" />
+    <Compile Remove="Migrations\20180828025219_coordenadas.Designer.cs" />
+    <Compile Remove="Migrations\20180906171654_primera_visita.cs" />
+    <Compile Remove="Migrations\20180906171654_primera_visita.Designer.cs" />
+    <Compile Remove="Migrations\20180907191022_garantia_prediagnostico.cs" />
+    <Compile Remove="Migrations\20180907191022_garantia_prediagnostico.Designer.cs" />
+    <Compile Remove="Migrations\20180907203557_subtiposervicio.cs" />
+    <Compile Remove="Migrations\20180907203557_subtiposervicio.Designer.cs" />
+    <Compile Remove="Migrations\20180907205723_servicio_subtipo.cs" />
+    <Compile Remove="Migrations\20180907205723_servicio_subtipo.Designer.cs" />
+    <Compile Remove="Migrations\20180910211555_requiere_instalacion.cs" />
+    <Compile Remove="Migrations\20180910211555_requiere_instalacion.Designer.cs" />
+    <Compile Remove="Migrations\20180911184257_puede_solicitar_env.cs" />
+    <Compile Remove="Migrations\20180911184257_puede_solicitar_env.Designer.cs" />
+    <Compile Remove="Migrations\20180914172327_log_refacciones.cs" />
+    <Compile Remove="Migrations\20180914172327_log_refacciones.Designer.cs" />
+    <Compile Remove="Migrations\20180914172945_requiere_instalacion_update.cs" />
+    <Compile Remove="Migrations\20180914172945_requiere_instalacion_update.Designer.cs" />
+    <Compile Remove="Migrations\20180916023247_cat_tipos_herencia.cs" />
+    <Compile Remove="Migrations\20180916023247_cat_tipos_herencia.Designer.cs" />
+    <Compile Remove="Migrations\20180916024526_borrar_tablas_promo_add_precios.cs" />
+    <Compile Remove="Migrations\20180916024526_borrar_tablas_promo_add_precios.Designer.cs" />
+    <Compile Remove="Migrations\20180916032800_drop_precios.cs" />
+    <Compile Remove="Migrations\20180916032800_drop_precios.Designer.cs" />
+    <Compile Remove="Migrations\20180916034055_borrar_tablas_p.cs" />
+    <Compile Remove="Migrations\20180916034055_borrar_tablas_p.Designer.cs" />
+    <Compile Remove="Migrations\20180916040518_agregar_tablas_promo1.cs" />
+    <Compile Remove="Migrations\20180916040518_agregar_tablas_promo1.Designer.cs" />
+    <Compile Remove="Migrations\20180916043915_add_tablas_promocion5.cs" />
+    <Compile Remove="Migrations\20180916043915_add_tablas_promocion5.Designer.cs" />
+    <Compile Remove="Migrations\20180918222018_desc_imagenes.cs" />
+    <Compile Remove="Migrations\20180918222018_desc_imagenes.Designer.cs" />
+    <Compile Remove="Migrations\20180919163050_ProductosExcluidos.cs" />
+    <Compile Remove="Migrations\20180919163050_ProductosExcluidos.Designer.cs" />
+    <Compile Remove="Migrations\20180920023404_imagen_firma.cs" />
+    <Compile Remove="Migrations\20180920023404_imagen_firma.Designer.cs" />
+    <Compile Remove="Migrations\20180920030117_relaciones_TablasnuevasPromo.cs" />
+    <Compile Remove="Migrations\20180920030117_relaciones_TablasnuevasPromo.Designer.cs" />
+    <Compile Remove="Migrations\20180920050605_LlavePromocionesCompatibles.cs" />
+    <Compile Remove="Migrations\20180920050605_LlavePromocionesCompatibles.Designer.cs" />
+    <Compile Remove="Migrations\20180920054400_edit_entidades_obl1.cs" />
+    <Compile Remove="Migrations\20180920054400_edit_entidades_obl1.Designer.cs" />
+    <Compile Remove="Migrations\20180921033926_edit_promociones_vigencia.cs" />
+    <Compile Remove="Migrations\20180921033926_edit_promociones_vigencia.Designer.cs" />
+    <Compile Remove="Migrations\20180921054117_edit_key_beneficio_msi.cs" />
+    <Compile Remove="Migrations\20180921054117_edit_key_beneficio_msi.Designer.cs" />
+    <Compile Remove="Migrations\20180923155039_garantia_producto.cs" />
+    <Compile Remove="Migrations\20180923155039_garantia_producto.Designer.cs" />
+    <Compile Remove="Migrations\20180923191022_agregar_promo_prod_coti.cs" />
+    <Compile Remove="Migrations\20180923191022_agregar_promo_prod_coti.Designer.cs" />
+    <Compile Remove="Migrations\20180923201346_int_tipo_beneficio.cs" />
+    <Compile Remove="Migrations\20180923201346_int_tipo_beneficio.Designer.cs" />
+    <Compile Remove="Migrations\20180923220731_borrar_tablas_nuevas.cs" />
+    <Compile Remove="Migrations\20180923220731_borrar_tablas_nuevas.Designer.cs" />
+    <Compile Remove="Migrations\20180923222049_agragr_tablas_promo_borradsa.cs" />
+    <Compile Remove="Migrations\20180923222049_agragr_tablas_promo_borradsa.Designer.cs" />
+    <Compile Remove="Migrations\20180923222927_catalogos_fallas_reparacion.cs" />
+    <Compile Remove="Migrations\20180923222927_catalogos_fallas_reparacion.Designer.cs" />
+    <Compile Remove="Migrations\20180923224301_garantia_producto_1.cs" />
+    <Compile Remove="Migrations\20180923224301_garantia_producto_1.Designer.cs" />
+    <Compile Remove="Migrations\20180924033234_catalogos_fallas_reparacion_1.cs" />
+    <Compile Remove="Migrations\20180924033234_catalogos_fallas_reparacion_1.Designer.cs" />
+    <Compile Remove="Migrations\20180924232336_edit_cc_suc.cs" />
+    <Compile Remove="Migrations\20180924232336_edit_cc_suc.Designer.cs" />
+    <Compile Remove="Migrations\20180925160304_add_linea_prod_id.cs" />
+    <Compile Remove="Migrations\20180925160304_add_linea_prod_id.Designer.cs" />
+    <Compile Remove="Migrations\20180925230301_notificaciones.cs" />
+    <Compile Remove="Migrations\20180925230301_notificaciones.Designer.cs" />
+    <Compile Remove="Migrations\20180926030402_add_tipo_productos.cs" />
+    <Compile Remove="Migrations\20180926030402_add_tipo_productos.Designer.cs" />
+    <Compile Remove="Migrations\20180926030639_add_cat_tipo_productos.cs" />
+    <Compile Remove="Migrations\20180926030639_add_cat_tipo_productos.Designer.cs" />
+    <Compile Remove="Migrations\20180926165316_imagen_pago_referenciado.cs" />
+    <Compile Remove="Migrations\20180926165316_imagen_pago_referenciado.Designer.cs" />
+    <Compile Remove="Migrations\20180926215004_notificaciones_1.cs" />
+    <Compile Remove="Migrations\20180926215004_notificaciones_1.Designer.cs" />
+    <Compile Remove="Migrations\20180926215306_notificaciones_2.cs" />
+    <Compile Remove="Migrations\20180926215306_notificaciones_2.Designer.cs" />
+    <Compile Remove="Migrations\20180926215538_notificaciones_3.cs" />
+    <Compile Remove="Migrations\20180926215538_notificaciones_3.Designer.cs" />
+    <Compile Remove="Migrations\20180926220041_notificaciones_4.cs" />
+    <Compile Remove="Migrations\20180926220041_notificaciones_4.Designer.cs" />
+    <Compile Remove="Migrations\20180926224803_notificaciones_5.cs" />
+    <Compile Remove="Migrations\20180926224803_notificaciones_5.Designer.cs" />
+    <Compile Remove="Migrations\20180928121403_add_prods_visible_part.cs" />
+    <Compile Remove="Migrations\20180928121403_add_prods_visible_part.Designer.cs" />
+    <Compile Remove="Migrations\20181001001757_adicion_tipos_montos.cs" />
+    <Compile Remove="Migrations\20181001001757_adicion_tipos_montos.Designer.cs" />
+    <Compile Remove="Migrations\20181012211705_numero_ir.cs" />
+    <Compile Remove="Migrations\20181012211705_numero_ir.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Imagenes\Cierre_Servicio\" />
+    <Folder Include="Imagenes\Imagenes_Productos\" />
+    <Folder Include="Imagenes\PDF_terminos\" />
+    <Folder Include="Imagenes\PDF_estimates\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="5.0.1" />
+    <PackageReference Include="DinkToPdf" Version="1.0.8" />
+    <PackageReference Include="DotNetCore.NPOI" Version="1.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />    
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>System</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+      <HintPath>System.ComponentModel.Composition</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <HintPath>System.ComponentModel.DataAnnotations</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>System.Data</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Imagenes\Cierre_Servicio\242cd05e-0f90-4eef-808e-4a73e1ec4037.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Imagenes\Cierre_Servicio\789751bf-5715-4234-9b71-6a11bd269580.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Imagenes\Cierre_Servicio\8d70fd63-bf05-4105-aa7a-399cea60f297.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Imagenes\Cierre_Servicio\a2c802a4-de97-4616-bc12-20ffa2a50481.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Imagenes\Imagenes_Productos\07222730-2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Imagenes\Imagenes_Productos\10221030-1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Imagenes\Imagenes_Productos\10221050-1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Imagenes\Imagenes_Productos\10221050-2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Imagenes\Imagenes_Productos\10221060-1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Imagenes\Imagenes_Productos\10221060-2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Imagenes\Imagenes_Productos\10256750-1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Imagenes\Imagenes_Productos\10343220-1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Imagenes\Imagenes_Productos\10343220-2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Imagenes\Imagenes_Productos\10343220-3.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Imagenes\Imagenes_Productos\10355940-4.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Imagenes\Imagenes_Productos\10426800-1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Imagenes\Imagenes_Productos\10426800-2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Imagenes\Imagenes_Productos\miele-logo-immer-besser.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="libwkhtmltox.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TemplateMail\Email.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TemplateMail\Email_inicio_servicio.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TemplateMail\Email_cambio_estatus_servicio.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TemplateMail\Email_orden_servicio.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TemplateMail\Email_reporte.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TemplateMail\Queja_abierta.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TemplateMail\Queja_cerrada.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+</Project>
